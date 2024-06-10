@@ -1,7 +1,3 @@
-body {
-  background-color: #f0f0f0;
-}
-
 .kblog {
   width: 100%;
   max-width: 1320px;
@@ -12,7 +8,7 @@ body {
   grid-template-columns: 300px 1fr 300px;
   gap: 10px;
   position: relative;
-  background-color: #f0f0f0cc;
+  background-color: #fffc;
 }
 
 .kleft-container,
@@ -37,6 +33,7 @@ body {
     rgba(0, 0, 255, 0.3) 71.5% 85.8%,
     rgba(139, 0, 255, 0.3) 85.8% 100%
   );
+  overflow: auto;
 }
 
 .kright-container {
