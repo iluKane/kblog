@@ -1,0 +1,162 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.kblog {
+  width: 100%;
+  max-width: 1320px;
+  min-width: 300px;
+  padding: 10px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 10px;
+  position: relative;
+  background-color: #f0f0f0cc;
+}
+
+.kleft-container,
+.kright-container {
+  width: 100%;
+  height: calc(100vh - 20px);
+  min-height: 400px;
+  position: sticky;
+  top: 10px;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.kleft-container {
+  background: linear-gradient(
+    -135deg,
+    rgba(255, 0, 0, 0.3) 0 14.3%,
+    rgba(255, 165, 0, 0.3) 14.3% 28.6%,
+    rgba(255, 255, 0, 0.3) 28.6% 42.9%,
+    rgba(0, 255, 0, 0.3) 42.9% 57.2%,
+    rgba(0, 127, 255, 0.3) 57.2% 71.5%,
+    rgba(0, 0, 255, 0.3) 71.5% 85.8%,
+    rgba(139, 0, 255, 0.3) 85.8% 100%
+  );
+}
+
+.kright-container {
+  box-shadow: 0 0 1px;
+}
+
+header {
+  width: 100%;
+  height: 220px;
+  box-shadow: 0 0 1px;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  box-shadow: 0 0 1px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 14px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 0 1px;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .kblog {
+    grid-template-columns: 1fr;
+  }
+  .kleft,
+  .kright {
+    display: none;
+  }
+  .kbg {
+    background-image: url("../icon/logo1.svg");
+  }
+}
+
+@media (min-width: 400px) and (max-width: 640px) {
+  .kblog {
+    grid-template-columns: 1fr;
+  }
+  .kleft,
+  .kright {
+    display: none;
+  }
+  .kbg {
+    background-image: url("../icon/logo2.svg");
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1080px) {
+  .kblog {
+    grid-template-columns: 300px 1fr;
+  }
+  .kright {
+    display: none;
+  }
+  .kbg {
+    background-image: url("../icon/logo3.svg");
+  }
+  .open #openKleft {
+    display: none;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1320px) {
+  .kbg {
+    background-image: url("../icon/logo4.svg");
+  }
+  .open {
+    display: none;
+  }
+}
+
+@media (min-width: 1320px) {
+  .kbg {
+    background-image: url("../icon/logo5.svg");
+  }
+  .open {
+    display: none;
+  }
+}
+
+.open {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px;
+  overflow: hidden;
+}
+
+.open div {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.open div:hover {
+  background-color: #00f;
+}
+
+.kbg {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
