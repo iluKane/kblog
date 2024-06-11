@@ -30,14 +30,24 @@ const searchInput = document.getElementById("searchInput");
 const resultsList = document.getElementById("results");
 
 function highlightKeyword(text, keyword) {
-    const regex = new RegExp(`(${keyword})`, "gi");
+    const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // 转义特殊字符
+    const regex = new RegExp(`(${escapedKeyword})`, "gi");
     return text.replace(regex, '<span class="highlight">$1</span>');
+}
+
+function toggleResultsDisplay(show) {
+    resultsList.style.display = show ? "grid" : "none";
 }
 
 function search() {
     const query = searchInput.value.trim();
+    if (!query) {
+        toggleResultsDisplay(false); // 如果搜索内容为空，则隐藏搜索结果
+        return;
+    }
+    toggleResultsDisplay(true); // 如果搜索内容不为空，则显示搜索结果
+
     resultsList.innerHTML = "";
-    if (!query) return; // 如果搜索内容为空，则直接返回
     const filteredPosts = blogPosts.filter((post) => {
         return (
             post.title.toLowerCase().includes(query.toLowerCase()) ||

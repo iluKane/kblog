@@ -3,15 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kblog</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- title -->
+    <title>KBlog</title>
+    <!-- Metadata -->
+    <meta name="author" content="Kane" />
+    <meta
+      name="description"
+      content="个人博客，分享前端知识，分享学习经验，分享生活"
+    />
+    <meta name="keywords" content="html,css,js,flex,grid,chart,ilukane,kblog" />
+    <meta name="date" content="2024-06-11" scheme="YYYY-MM-DD" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph metadata (for social media sharing) -->
+    <meta property="og:title" content="KBlog" />
+    <meta
+      property="og:description"
+      content="个人博客，分享前端知识，分享学习经验，分享生活"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.ilukane.top" />
+    <meta
+      property="og:image"
+      content="https://www.ilukane.top/assets/img/favicon.png"
+    />
+    <meta property="og:site_name" content="KBlog" />
+    <meta property="og:locale" content="zh_CN" />
+    <!-- Article metadata -->
+    <meta property="article:published_time" content="2024-06-11T08:00:00Z" />
+    <meta property="article:modified_time" content="2024-06-11T09:00:00Z" />
+    <meta property="article:section" content="KBlog" />
+    <meta property="article:tag" content="KBlog,ilukane,kblog" />
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
-    <div class="kbg">
-      <!-- bg img -->
-    </div>
     <div class="kblog">
       <div class="kleft" id="kleft">
         <div class="kleft-container">
@@ -23,7 +56,7 @@
               <div class="author-desc-off">ilukane.top</div>
             </div>
           </div>
-          <form class="search">
+          <div class="search">
             <div class="search-box">
               <div class="search-icon">
                 <img src="../assets/icon/searchIcon.svg" alt="" />
@@ -36,8 +69,13 @@
               />
             </div>
             <ul class="search-results" id="results"></ul>
-          </form>
-          <div class="nav"></div>
+            <div class="search-nav">
+              <div class="search-item"></div>
+              <div class="search-item"></div>
+              <div class="search-item"></div>
+              <div class="search-item"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="main">
@@ -49,10 +87,15 @@
         <div class="kright-container">kright</div>
       </div>
       <div class="open">
-        <div id="openKleft">L</div>
-        <div id="openKright">R</div>
+        <div id="openKleft">
+          <img src="./assets/icon/kleft.svg" alt="" />
+        </div>
+        <div id="openKright">
+          <img src="./assets/icon/kright.svg" alt="" />
+        </div>
       </div>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/popup.js"></script>
   </body>
 </html>
