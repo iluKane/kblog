@@ -144,39 +144,4 @@
   text-align: center;
   line-height: 40px;
   font-family: "kaiti";
-  transition: all 0.3s ease;
-  position: relative;
-}
-.search-item:hover{
-  filter: drop-shadow(0 0 1px #333);
-}
-.search-item:hover::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: calc(50% - 10px);
-  width: 20px;
-  height: 20px;
-  outline: 6px solid #fff;
-  border-radius: 50%;
-  z-index: -1;
-}
-.search-item:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: calc(50% - 15px);
-  width: 30px;
-  height: 3px;
-  border-radius: 20px 20px 0 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 128, 128, 1) 0 14.3%,
-    rgba(255, 218, 128, 1) 14.3% 28.6%,
-    rgba(255, 255, 128, 1) 28.6% 42.9%,
-    rgba(128, 255, 128, 1) 42.9% 57.2%,
-    rgba(128, 191, 255, 1) 57.2% 71.5%,
-    rgba(128, 128, 255, 1) 71.5% 85.8%,
-    rgba(191, 128, 255, 1) 85.8% 100%
-  );
 }
