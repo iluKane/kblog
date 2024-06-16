@@ -1,147 +1,295 @@
+/* reset.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --text: #333;
+}
+
+/* 将所有元素的边距和填充设为0，移除列表样式，移除表格边框 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* 设置默认的行高 */
+body {
+  line-height: 1;
+}
+
+/* 移除列表项的默认样式 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 设置块引用的默认样式 */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* 设置表格的默认边框样式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 字体 */
 @font-face {
-  font-family: "font";
-  src: url(../font/Comfortaa/Comfortaa-Bold.ttf);
+  font-family: C;
+  src: url("../font/Comfortaa/Comfortaa-Bold.ttf");
+}
+@font-face {
+  font-family: B;
+  src: url("../font/Comfortaa/Comfortaa-Regular.ttf");
+}
+@font-face {
+  font-family: A;
+  src: url("../font/Comfortaa/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: D;
+  src: url("../font/simkai.ttf");
 }
 
-.author {
+/* kblog */
+.kblog {
   width: 100%;
-  max-width: 400px;
-  height: 50px;
+  max-width: 1320px;
+  min-width: 300px;
+  padding: 10px;
+  margin: auto;
   display: grid;
-  grid-template-columns: 50px 1fr;
-  grid-template-rows: 30px 20px;
-  column-gap: 10px;
-}
-.author-avatar {
-  width: 50px;
-  height: 50px;
-  grid-row: 1 / 3;
-  background-image: url(../img/avatar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-}
-.author-name {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "font";
-  line-height: 30px;
-}
-.author-desc {
-  line-height: 20px;
-  font-family: "楷体";
-  overflow: hidden;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 10px;
   position: relative;
-  cursor: pointer;
-  height: 20px;
-  color: #444;
-}
-.author-desc-on,
-.author-desc-off {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.author-desc-off {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  font-family: "font";
-}
-.author-desc:hover .author-desc-on {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-.author-desc:hover .author-desc-off {
-  transform: translateY(-100%);
-  opacity: 1;
 }
 
-.search {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* kleft-container, kright-container */
+.kleft-container,
+.kright-container {
+  width: 300px;
+  height: calc(100vh - 20px);
+  min-height: 400px;
+  position: sticky;
+  top: 10px;
+  padding: 40px 20px;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
-.search-box {
-  display: flex;
+.kleft-container {
   border-radius: 10px;
-  padding: 0 5px;
-  background-color: #fff;
+  background: linear-gradient(
+    -135deg,
+    rgba(255, 128, 128, 1) 0 14.3%,
+    rgba(255, 218, 128, 1) 14.3% 28.6%,
+    rgba(255, 255, 128, 1) 28.6% 42.9%,
+    rgba(128, 255, 128, 1) 42.9% 57.2%,
+    rgba(128, 191, 255, 1) 57.2% 71.5%,
+    rgba(128, 128, 255, 1) 71.5% 85.8%,
+    rgba(191, 128, 255, 1) 85.8% 100%
+  );
+  overflow: auto;
 }
-.search-box .search-icon {
+
+/* 响应式 */
+/* 移动端 */
+@media (max-width: 400px) {
+  .kblog {
+    grid-template-columns: 0 1fr 0;
+    gap: 0;
+  }
+  .kleft-container {
+    position: fixed;
+    top: 10px;
+    left: -300px;
+  }
+  .kright-container {
+    position: fixed;
+    top: 10px;
+    right: -300px;
+  }
+}
+/* 平板 */
+@media (min-width: 400px) and (max-width: 640px) {
+  .kblog {
+    grid-template-columns: 0 1fr 0;
+    gap: 0;
+  }
+  .kleft-container {
+    position: fixed;
+    top: 10px;
+    left: -300px;
+  }
+  .kright-container {
+    position: fixed;
+    top: 10px;
+    right: -300px;
+  }
+}
+/* 桌面 */
+@media (min-width: 640px) and (max-width: 1080px) {
+  .kblog {
+    grid-template-columns: 300px 1fr 0;
+    padding-right: 0;
+  }
+  .kright-container {
+    position: fixed;
+    top: 10px;
+    right: -300px;
+  }
+  .kcontrols #openKleft {
+    display: none;
+  }
+}
+/* 大桌面 */
+@media (min-width: 1080px) {
+  .kcontrols {
+    display: none;
+  }
+}
+
+/* 悬浮按钮 */
+.kcontrols {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 1px #333;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 999;
+}
+#openKleft,
+#openKright {
   width: 40px;
   height: 40px;
   display: flex;
 }
-.search-box .search-icon img {
-  width: 20px;
-  height: 20px;
-  margin: 9px auto;
+#openKleft img,
+#openKright img {
+  width: 24px;
+  height: 24px;
+  margin: auto;
 }
-.search-box input[type="text"] {
-  flex: 1;
-  font-size: 15px;
-  outline: none;
-  border: none;
-  margin-right: 5px;
-  font-family: "kaiti";
-  color: #000;
-}
-.search-results {
-  list-style-type: none;
-  word-wrap: break-word;
-  display: grid;
-  display: none;
-  gap: 10px;
-  font-family: font, "楷体";
-  font-weight: bold;
-  max-height: 300px;
-  overflow: auto;
-}
-.search-results .card {
-  background-color: #fff9;
-  border-radius: 10px;
-  padding: 15px;
-}
-.search-results .kcard {
-  background-color: #fff9;
-  border-radius: 10px;
-  min-height: 98px;
-  text-align: center;
-  line-height: 98px;
-  font-family: serif;
-  font-weight: normal;
-}
-.search-results .text {
-  margin-top: 10px;
-  font-size: 13px;
-  color: #444;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  word-wrap: break-word;
-}
-.search-results .highlight {
-  color: red;
-  font-weight: bold;
-}
-
-.search-nav {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  z-index: 999;
-}
-.search-item {
-  height: 40px;
-  border-radius: 10px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 40px;
-  font-family: "kaiti";
+#openKleft:hover,
+#openKright:hover {
+  background-color: #eee;
 }

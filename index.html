@@ -40,15 +40,19 @@
     <meta property="article:section" content="KBlog" />
     <meta property="article:tag" content="KBlog,ilukane,kblog" />
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/media.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/kleft.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/kcenter.css" />
+    <link rel="stylesheet" href="./assets/css/kright.css" />
   </head>
   <body>
+    <!-- kblog -->
     <div class="kblog">
-      <div class="kleft" id="kleft">
+      <!-- kleft -->
+      <div class="kleft">
+        <!-- kleft-container -->
         <div class="kleft-container">
+          <!-- author -->
           <div class="author">
             <div class="author-avatar"></div>
             <div class="author-name">Kindergarten boss</div>
@@ -57,6 +61,7 @@
               <div class="author-desc-off">ilukane.top</div>
             </div>
           </div>
+          <!-- search -->
           <div class="search">
             <div class="search-box">
               <div class="search-icon">
@@ -87,36 +92,59 @@
           </div>
         </div>
       </div>
-      <div class="main">
+      <!-- kcenter -->
+      <div class="kcenter">
+        <!-- header -->
         <header>
-          <div class="header-link">
-            <div class="header-link-item">首页</div>
-            <div class="header-link-xyg">
-              <div id="xyg-icon">
-                <img src="./assets/icon/left.svg" alt="" />
+          <!-- header-nav -->
+          <div class="header-nav">
+            <div class="header-nav-item">首页</div>
+            <div class="header-nav-turn">
+              <!-- turn -->
+              <div class="turn-icon" id="turnIcon">
+                <img src="./assets/icon/turnIcon.svg" alt="" />
               </div>
-              <div id="xyg-box">
-                <div class="xyg-item">前端</div>
-                <div class="xyg-item">前端</div>
-                <div class="xyg-item">前端</div>
-                <div class="xyg-item">前端</div>
+              <div class="turn-result" id="turnResult">
+                <div class="turn-item">前端</div>
+                <div class="turn-item">前端</div>
+                <div class="turn-item">前端</div>
+                <div class="turn-item">前端</div>
               </div>
             </div>
-            <div class="header-link-item">第一个文章</div>
+            <div class="header-nav-item">第一个文章</div>
+            <div class="header-nav-turn">
+              <!-- turn -->
+              <div class="turn-icon" id="turnIcon">
+                <img src="./assets/icon/turnIcon.svg" alt="" />
+              </div>
+              <div class="turn-result" id="turnResult">
+                <div class="turn-item">前端</div>
+                <div class="turn-item">前端</div>
+                <div class="turn-item">前端</div>
+                <div class="turn-item">前端</div>
+              </div>
+            </div>
+            <div class="header-nav-item">第一个文章</div>
           </div>
         </header>
-        <div class="content">main-content</div>
-        <footer>main-footer</footer>
+        <!-- main -->
+        <div class="main">kcenter-main</div>
+        <!-- footer -->
+        <footer>kcenter-footer</footer>
       </div>
-      <div class="kright" id="kright">
+      <!-- kright -->
+      <div class="kright">
         <div class="kright-container">kright</div>
       </div>
-      <div class="open">
+      <!-- kcontrols -->
+      <div class="kcontrols">
+        <!-- openKleft -->
         <div id="openKleft">
-          <img src="./assets/icon/kleft.svg" alt="" />
+          <img src="./assets/icon/openKleft.svg" alt="" />
         </div>
+        <!-- openKright -->
         <div id="openKright">
-          <img src="./assets/icon/kright.svg" alt="" />
+          <img src="./assets/icon/openKright.svg" alt="" />
         </div>
       </div>
     </div>

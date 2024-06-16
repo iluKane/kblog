@@ -20,15 +20,15 @@ document.getElementById('openKright').addEventListener('click', function () {
 });
 
 
-const xygIcon = document.getElementById('xyg-icon');
-const xygBox = document.getElementById('xyg-box');
+const turnIcon = document.getElementById('turnIcon');
+const turnResult = document.getElementById('turnResult');
 
-xygIcon.addEventListener('click', function () {
-    if (xygBox.style.display === 'none' || xygBox.style.display === '') {
-        xygBox.style.display = 'block';
-        xygIcon.style.transform = 'rotate(90deg)';
+turnIcon.addEventListener('click', function () {
+    if (turnResult.style.display === 'none' || turnResult.style.display === '') {
+        turnResult.style.display = 'block';
+        turnIcon.style.transform = 'rotate(90deg)';
     } else {
-        xygBox.style.display = 'none';
-        xygIcon.style.transform = 'rotate(0deg)';
+        turnResult.style.display = 'none';
+        turnIcon.style.transform = 'rotate(0deg)';
     }
 });
