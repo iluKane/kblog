@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "font";
+  src: url(../font/Comfortaa/Comfortaa-Bold.ttf);
+}
+
+.author {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 30px 20px;
+  column-gap: 10px;
+}
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  grid-row: 1 / 3;
+  background-image: url(../img/avatar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.author-name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "font";
+  line-height: 30px;
+}
+.author-desc {
+  line-height: 20px;
+  font-family: "楷体";
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  height: 20px;
+  color: #444;
+}
+.author-desc-on,
+.author-desc-off {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.author-desc-off {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  font-family: "font";
+}
+.author-desc:hover .author-desc-on {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.author-desc:hover .author-desc-off {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.search {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search-box {
+  display: flex;
+  border-radius: 10px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+.search-box .search-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+.search-box .search-icon img {
+  width: 20px;
+  height: 20px;
+  margin: 9px auto;
+}
+.search-box input[type="text"] {
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  margin-right: 5px;
+  font-family: "kaiti";
+  color: #000;
+}
+.search-results {
+  list-style-type: none;
+  word-wrap: break-word;
+  display: grid;
+  display: none;
+  gap: 10px;
+  font-family: font, "楷体";
+  font-weight: bold;
+  max-height: 300px;
+  overflow: auto;
+}
+.search-results .card {
+  background-color: #fff9;
+  border-radius: 10px;
+  padding: 15px;
+}
+.search-results .kcard {
+  background-color: #fff9;
+  border-radius: 10px;
+  min-height: 98px;
+  text-align: center;
+  line-height: 98px;
+  font-family: serif;
+  font-weight: normal;
+}
+.search-results .text {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #444;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.search-results .highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.search-nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  z-index: 999;
+}
+.search-item {
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-family: "kaiti";
+}

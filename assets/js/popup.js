@@ -18,3 +18,17 @@ document.getElementById('openKright').addEventListener('click', function () {
         rightContainer.style.right = '-300px';
     }
 });
+
+
+const xygIcon = document.getElementById('xyg-icon');
+const xygBox = document.getElementById('xyg-box');
+
+xygIcon.addEventListener('click', function () {
+    if (xygBox.style.display === 'none' || xygBox.style.display === '') {
+        xygBox.style.display = 'block';
+        xygIcon.style.transform = 'rotate(90deg)';
+    } else {
+        xygBox.style.display = 'none';
+        xygIcon.style.transform = 'rotate(0deg)';
+    }
+});
