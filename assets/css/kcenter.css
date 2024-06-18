@@ -26,6 +26,7 @@ footer {
   height: 24px;
   line-height: 24px;
   display: flex;
+  flex-wrap: wrap;
   font-family: D;
 }
 .header-nav-item {
@@ -73,5 +74,5 @@ footer {
   color: #fff;
 }
 .turn-result .turn-item:hover {
-  background-color: #5558;
+  background-color: #fff5;
 }

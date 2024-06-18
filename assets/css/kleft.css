@@ -79,7 +79,7 @@
   border: none;
   margin-right: 5px;
   color: #000;
-  font-family: B,D;
+  font-family: B, D;
 }
 .search-results {
   list-style-type: none;
@@ -116,12 +116,13 @@
   text-overflow: ellipsis;
   white-space: normal;
   word-wrap: break-word;
-  font-family: B,D;
+  font-family: B, D;
 }
 .search-results .highlight {
+  display: inline-block;
   color: red;
   font-weight: bold;
-  font-family: C;
+  font-family: B, D;
 }
 
 .search-nav {
