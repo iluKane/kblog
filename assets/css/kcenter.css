@@ -7,6 +7,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding: 14px;
+  display: flex;
+  flex-direction: column;
+  font-family: B, D;
 }
 .main {
   width: 100%;
@@ -24,10 +27,8 @@ footer {
 .header-nav {
   width: 100%;
   height: 24px;
-  line-height: 24px;
+  line-height: 26px;
   display: flex;
-  flex-wrap: wrap;
-  font-family: D;
 }
 .header-nav-item {
   padding: 0 5px;
@@ -58,12 +59,14 @@ footer {
 }
 .turn-result {
   display: none;
+  padding: 5px 0;
   position: absolute;
   top: 26px;
   width: 100px;
+  max-height: 106px;
   border-radius: 5px;
   background-color: #5555;
-  overflow: hidden;
+  overflow: auto;
 }
 .turn-result .turn-item {
   position: relative;
@@ -75,4 +78,29 @@ footer {
 }
 .turn-result .turn-item:hover {
   background-color: #fff5;
+}
+
+.header-title {
+  margin-top: auto;
+  width: 100%;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 1000;
+  color: #fff;
+}
+
+.header-data {
+  width: 100%;
+  height: 24px;
+  line-height: 26px;
+  display: flex;
+}
+.header-data div {
+  padding: 0 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+.header-data div:hover {
+  background-color: #5555;
 }
