@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Not Found</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>404 页面未找到</title>
     <style>
+      :root {
+        --color: #5555;
+        --bg: #333;
+      }
+
       body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f0f0f0;
-        color: #333;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 100vh;
+        padding: 20px;
+        display: flex;
+        color: var(--color);
+      }
+      .container {
+        margin: auto;
       }
       h1 {
-        font-size: 3em;
-        margin: 0.2em 0;
+        font-size: 5em;
       }
       p {
-        font-size: 1.2em;
-        margin: 0.5em 0;
+        margin: 20px 0;
+        font-size: 20px;
       }
-      a {
-        color: #007bff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      a:hover {
-        text-decoration: underline;
+      .btn {
+        width: 140px;
+        padding: 10px 0;
+        margin: 20px 0;
+        background-color: var(--bg);
+        border-radius: 7px;
+        text-align: center;
+        color: #fff;
       }
     </style>
   </head>
   <body>
-    <h1>404 Not Found</h1>
-    <p>Sorry, the page you are looking for does not exist.</p>
-    <p><a href="/">Go to Homepage</a></p>
+    <div class="container">
+      <h1>404 :(</h1>
+      <p>Page not Found ...</p>
+      <a href="/">
+        <div class="btn">HOME</div>
+      </a>
+    </div>
   </body>
 </html>
