@@ -106,15 +106,12 @@ header {
   margin: 5px 0;
   font-family: B, D;
 }
-@font-face{
-  font-family: JetBrains Mono;
-  src: url("../font/JetBrainsMono-Regular.ttf");
-}
 .main .kcode .CodeMirror {
   height: auto;
   color: #555;
   font-family: JetBrains Mono;
 }
+
 .main .openBtns {
   padding: 0 18px;
   margin-bottom: 10px;
@@ -133,6 +130,7 @@ header {
 .main .openBtns div.openIframe {
   line-height: 24px;
 }
+
 .main .codeBoxs {
   margin: 5px 0;
   display: flex;
@@ -147,6 +145,7 @@ header {
 .main .codeBoxs div {
   background-color: #eee;
 }
+
 iframe {
   width: 100%;
   border: none;

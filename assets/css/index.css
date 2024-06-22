@@ -41,6 +41,10 @@ a {
   font-family: D;
   src: url("../font/simkai.ttf");
 }
+@font-face{
+  font-family: JetBrains Mono;
+  src: url("../font/JetBrainsMono-Regular.ttf");
+}
 
 /* kblog */
 .kblog {
