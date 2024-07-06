@@ -1,12 +1,29 @@
 var jsonData = [
-    { tag: "h1", title: "CSS Filters 详解：为你的\n网页添加酷炫效果" },
+    { tag: "h1", title: "CSS Filters \n为你的网页添加酷炫效果" },
+    {
+        tag: "div",
+        content: [
+            {
+                tag: "p",
+                text: "点击 HTML CSS JS 按钮可查看相关代码",
+            },
+            {
+                tag: "p",
+                text: "点击 Preview 按钮可查看效果",
+            },
+            {
+                tag: "p",
+                text: "如果对照的图片不一样，或者效果不明显，请点击 Preview 按钮刷新",
+            },
+            {
+                tag: "p",
+                text: "本页面效果图由 https://picsum.photos 免费图床提供",
+            },
+        ]
+    },
     {
         tag: "p",
         text: "在网页设计中，为图像和元素添加视觉效果是常见且重要的一环。CSS Filters 提供了一种简便且强大的方式来实现这些效果。今天，我们将详细介绍各种 CSS Filters 及其应用方法，让你的网页更加生动和引人注目。",
-    },
-    {
-        tag: "div",
-        
     },
     {
         tag: "h2",
@@ -318,6 +335,18 @@ function createElements(data, parent) {
     }
     if (data.text) {
         element.innerText = data.text;
+    }
+    if (data.content) {
+        const notice = document.createElement("div");
+        notice.className = "notice";
+
+        data.content.forEach(item => {
+            const element = document.createElement("div");
+            element.innerText = item.text;
+            notice.appendChild(element);
+        });
+
+        element.appendChild(notice);
     }
 
     if (data.code) {
