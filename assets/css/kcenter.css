@@ -9,14 +9,13 @@ header {
   padding: 14px;
   display: flex;
   flex-direction: column;
-  font-family: B, D;
 }
 
 /* header */
 .header-nav {
   width: 100%;
   height: 24px;
-  line-height: 26px;
+  line-height: 24px;
   display: flex;
   gap: 1px;
 }
@@ -91,25 +90,29 @@ header {
 .main {
   width: 100%;
   margin: 30px 0;
-  font-family: B, D;
 }
 .main h1 {
   text-align: center;
   margin-bottom: 20px;
 }
+.main h2,
+.main h3{
+  margin-top: 20px;
+  margin-left: 18px;
+  color: #333;
+}
 .main p {
-  padding: 0 18px;
-  font-size: 1.2em;
+  padding: 5px 18px;
   color: #333;
 }
 .main .kcode {
   margin: 5px 0;
-  font-family: B, D;
 }
 .main .kcode .CodeMirror {
   height: auto;
   color: #555;
-  font-family: JetBrains Mono;
+  font-size: 12px;
+  font-family: mono;
 }
 
 .main .openBtns {
@@ -117,18 +120,16 @@ header {
   margin-bottom: 10px;
   display: flex;
   gap: 5px;
+  font-family: comfortaa;
 }
 .main .openBtns div {
-  height: 24px;
-  line-height: 26px;
+  height: 20px;
+  line-height: 22px;
   padding: 0px 5px;
   border-radius: 5px;
-  box-shadow: 0 0 2px;
-  font-size: 15px;
+  box-shadow: 0 0 1px;
+  font-size: 12px;
   cursor: pointer;
-}
-.main .openBtns div.openIframe {
-  line-height: 24px;
 }
 
 .main .codeBoxs {

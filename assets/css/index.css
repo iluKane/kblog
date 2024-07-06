@@ -1,4 +1,19 @@
 /* reset.css */
+/* 字体 */
+@font-face {
+  font-family: comfortaa;
+  src: url("../font/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: mono;
+  src: url("../font/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+  font-family: songti;
+  src: url("../font/simsun.ttc");
+}
+
+/* 全局 */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +23,10 @@
   display: none;
 }
 
+html,
+body {
+  font-family: songti;
+}
 /* 移除列表项的默认样式 */
 ol,
 ul {
@@ -22,28 +41,6 @@ table {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-/* 字体 */
-@font-face {
-  font-family: C;
-  src: url("../font/Comfortaa/Comfortaa-Bold.ttf");
-}
-@font-face {
-  font-family: B;
-  src: url("../font/Comfortaa/Comfortaa-Regular.ttf");
-}
-@font-face {
-  font-family: A;
-  src: url("../font/Comfortaa/Comfortaa-Light.ttf");
-}
-@font-face {
-  font-family: D;
-  src: url("../font/simkai.ttf");
-}
-@font-face{
-  font-family: JetBrains Mono;
-  src: url("../font/JetBrainsMono-Regular.ttf");
 }
 
 /* kblog */

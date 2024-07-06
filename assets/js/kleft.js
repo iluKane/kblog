@@ -1,29 +1,10 @@
 const blogPosts = [
     {
-        link: "https://www.google.com",
-        title: "博客真的需要图片点击放大功能吗？",
+        link: "/index.html",
+        title: "CSS Filters 详解：为你的网页添加酷炫效果",
         content:
-            "总结一下可以看到分为两大阵营：非平台类：不支持；平台类：全局支持。从这点可以看出，平台类是服务于博主的，而博主的需求各异，因此平台直接全局支持该功能比较省心。而非平台类，据我所知的几家都不支持，因为他们自己就是博主，直接服务于读者。看到这里你可能会产生疑惑，博主的服务对象也是读者，那为什么经过博主这一层就需要支持了？",
+            "在网页设计中，为图像和元素添加视觉效果是常见且重要的一环。CSS Filters 提供了一种简便且强大的方式来实现这些效果。今天，我们将详细介绍各种 CSS Filters 及其应用方法，让你的网页更加生动和引人注目。",
     },
-    {
-        link: "https://www.google.com",
-        title: "博客真的需要图片点击放大功能吗？",
-        content:
-            "总结一下可以看到分为两大阵营：非平台类：不支持；平台类：全局支持。从这点可以看出，平台类是服务于博主的，而博主的需求各异，因此平台直接全局支持该功能比较省心。而非平台类，据我所知的几家都不支持，因为他们自己就是博主，直接服务于读者。看到这里你可能会产生疑惑，博主的服务对象也是读者，那为什么经过博主这一层就需要支持了？",
-    },
-    {
-        link: "https://www.google.com",
-        title: "博客真的需要图片点击放大功能吗？",
-        content:
-            "总结一下可以看到分为两大阵营：非平台类：不支持；平台类：全局支持。从这点可以看出，平台类是服务于博主的，而博主的需求各异，因此平台直接全局支持该功能比较省心。而非平台类，据我所知的几家都不支持，因为他们自己就是博主，直接服务于读者。看到这里你可能会产生疑惑，博主的服务对象也是读者，那为什么经过博主这一层就需要支持了？",
-    },
-    {
-        link: "https://www.google.com",
-        title: "博客真的需要图片点击放大功能吗？",
-        content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia numquam dolore quisquam, voluptates, soluta porro nostrum voluptatem omnis quasi non fuga magnam velit ut facere quis et? Mollitia maiores et voluptatum fugiat dolores officia, necessitatibus ex distinctio sunt quibusdam!",
-    },
-    // Add more blog posts here
 ];
 
 const searchInput = document.getElementById("searchInput");

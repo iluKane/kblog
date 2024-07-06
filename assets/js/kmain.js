@@ -1,8 +1,28 @@
 var jsonData = [
-    { tag: "h1", title: "CSS Shadow Box" },
+    { tag: "h1", title: "CSS Filters 详解：为你的\n网页添加酷炫效果" },
     {
         tag: "p",
-        text: "下面是一个简单示例",
+        text: "在网页设计中，为图像和元素添加视觉效果是常见且重要的一环。CSS Filters 提供了一种简便且强大的方式来实现这些效果。今天，我们将详细介绍各种 CSS Filters 及其应用方法，让你的网页更加生动和引人注目。",
+    },
+    {
+        tag: "div",
+        
+    },
+    {
+        tag: "h2",
+        title: "CSS Filters",
+    },
+    {
+        tag: "p",
+        text: "是一组用于处理图像和元素的图形效果，可以通过 filter 属性轻松添加。它们可以应用于图像、背景和边框等元素。常见的 CSS Filters 包括模糊、亮度、对比度、灰度等。",
+    },
+    {
+        tag: "h3",
+        text: "1. blur()",
+    },
+    {
+        tag: "p",
+        text: "用来设置图像的模糊效果。参数为模糊半径（像素）",
     },
     {
         tag: "div",
@@ -10,20 +30,277 @@ var jsonData = [
         showCSS: true,
         showJS: false,
         code: {
-            html: [{ indent: "0", value: '<div class="box"></div>' }],
-            css: [
-                { indent: "0", value: ".box {" },
-                { indent: "2", value: "width: 100px;" },
-                { indent: "2", value: "height: 100px;" },
-                { indent: "2", value: "border: 1px solid #000;" },
-                { indent: "2", value: "box-shadow: 0px 0px 10px;" },
-                { indent: "0", value: "}" },
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="blur" src="https://picsum.photos/100" alt="" />' }
             ],
-            js: [{ indent: "0", value: "console.log('JS代码运行中');" }],
+            "css": [
+                { "indent": "0", "value": '.blur {' },
+                { "indent": "2", "value": 'filter: blur(5px); /* 5像素的模糊 */' },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
         },
     },
-    { tag: "p", text: "测试1" },
-    { tag: "p", text: "测试2" },
+    {
+        tag: "h3",
+        text: "2. brightness()",
+    },
+    {
+        tag: "p",
+        text: "调整元素的亮度。值大于 1 增加亮度，小于 1 降低亮度",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="brightness" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.brightness {' },
+                {
+                    "indent": "2", "value": 'filter: brightness(1.5); /* 增加 50% 的亮度 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "3. contrast()",
+    },
+    {
+        tag: "p",
+        text: "调整元素的对比度。值大于 1 增加对比度，小于 1 降低对比度",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="contrast" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.contrast {' },
+                {
+                    "indent": "2", "value": 'filter: contrast(0.5); /* 减少 50% 的对比度 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "4. grayscale()",
+    },
+    {
+        tag: "p",
+        text: "将元素转换为灰度图像。值在 0 到 1 之间，1 表示完全灰度",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="grayscale" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.grayscale {' },
+                {
+                    "indent": "2", "value": 'filter: grayscale(1); /* 完全灰度 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "5. hue-rotate()",
+    },
+    {
+        tag: "p",
+        text: "调整元素的色相。值以角度为单位（deg）",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="hue-rotate" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.hue-rotate {' },
+                {
+                    "indent": "2", "value": 'filter: hue-rotate(90deg); /* 色相旋转 90 度 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "6. invert()",
+    },
+    {
+        tag: "p",
+        text: "反转元素的颜色。值在 0 到 1 之间，1 表示完全反转",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="invert" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.invert {' },
+                {
+                    "indent": "2", "value": 'filter: invert(1); /* 完全反转颜色 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "7. opacity()",
+    },
+    {
+        tag: "p",
+        text: "调整元素的不透明度。值在 0 到 1 之间，1 表示完全不透明",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="opacity" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.opacity {' },
+                {
+                    "indent": "2", "value": 'filter: opacity(0.5); /* 50% 的不透明度 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "8. saturate()",
+    },
+    {
+        tag: "p",
+        text: "调整元素的饱和度。值大于 1 增加饱和度，小于 1 降低饱和度",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="saturate" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.saturate {' },
+                {
+                    "indent": "2", "value": 'filter: saturate(2); /* 增加 100% 的饱和度 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "9. sepia()",
+    },
+    {
+        tag: "p",
+        text: "将元素转换为棕褐色。值在 0 到 1 之间，1 表示完全棕褐色",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<img src="https://picsum.photos/100" alt="" />' },
+                { "indent": "0", "value": '<img class="sepia" src="https://picsum.photos/100" alt="" />' }
+            ],
+            "css": [
+                { "indent": "0", "value": '.sepia {' },
+                {
+                    "indent": "2", "value": 'filter: sepia(1); /* 完全棕褐色 */'
+                },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
+    {
+        tag: "h3",
+        text: "10. drop-shadow()",
+    },
+    {
+        tag: "p",
+        text: "为元素添加阴影效果。不同于 box-shadow，drop-shadow() 应用于图像本身的形状",
+    },
+    {
+        tag: "div",
+        showHTML: false,
+        showCSS: true,
+        showJS: false,
+        code: {
+            "html": [
+                { "indent": "0", "value": '<div class="normal"></div>' },
+                { "indent": "0", "value": '<div class="drop-shadow"></div>' }
+            ],
+            "css": [
+                { "indent": "0", "value": 'div {' },
+                { "indent": "2", "value": 'width: 100px;' },
+                { "indent": "2", "value": 'height: 100px;' },
+                { "indent": "2", "value": 'border: 10px dashed #00f;' },
+                { "indent": "2", "value": 'border-radius: 50%;' },
+                { "indent": "2", "value": 'box-sizing: border-box;' },
+                { "indent": "2", "value": 'float: left;' },
+                { "indent": "2", "value": 'margin-right: 20px;' },
+                { "indent": "0", "value": '}' },
+                { "indent": "0", "value": '.drop-shadow {' },
+                { "indent": "2", "value": 'filter: drop-shadow(5px 5px 3px #000);' },
+                { "indent": "0", "value": '}' }
+            ],
+            js: [{}],
+        },
+    },
 ];
 
 
@@ -56,7 +333,7 @@ function createElements(data, parent) {
         var openJS = document.createElement("div");
         openJS.innerText = "JS";
         var openIframe = document.createElement("div");
-        openIframe.innerText = "预览";
+        openIframe.innerText = "Preview ( 预览前点击刷新 )";
         openIframe.className = "openIframe";
 
         var htmlBox = document.createElement("div");
@@ -141,7 +418,6 @@ function createElements(data, parent) {
             jsEditor.getValue(),
             iframeBox
         );
-
         openIframe.addEventListener("click", function () {
             updateIframe(
                 htmlEditor.getValue(),
