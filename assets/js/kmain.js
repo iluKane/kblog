@@ -362,7 +362,7 @@ function createElements(data, parent) {
         var openJS = document.createElement("div");
         openJS.innerText = "JS";
         var openIframe = document.createElement("div");
-        openIframe.innerText = "Preview ( 预览前点击刷新 )";
+        openIframe.innerText = "Preview";
         openIframe.className = "openIframe";
 
         var htmlBox = document.createElement("div");
