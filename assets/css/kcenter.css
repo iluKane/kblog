@@ -99,7 +99,7 @@ header {
   padding: 18px;
   margin: 30px 0;
   border-radius: 10px;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.5);
   line-height: 1.4;
   font-family: confortaa, songti;
   font-weight: bold;
@@ -145,7 +145,7 @@ header {
 }
 .main .openBtns div:hover,
 .main .codeBoxs > div:hover {
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.5);
 }
 
 iframe {

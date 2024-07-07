@@ -17,7 +17,7 @@ var jsonData = [
             },
             {
                 tag: "p",
-                text: "4. 本页面效果图由 https://picsum.photos 免费图床提供",
+                text: "4. 本页面用图由 https://picsum.photos 免费图床提供，加载速度慢，请稍等",
             },
         ]
     },
