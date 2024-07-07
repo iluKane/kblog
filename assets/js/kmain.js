@@ -5,19 +5,19 @@ var jsonData = [
         content: [
             {
                 tag: "p",
-                text: "点击 HTML CSS JS 按钮可查看相关代码",
+                text: "1. 点击 HTML CSS JS 按钮可查看相关代码",
             },
             {
                 tag: "p",
-                text: "点击 Preview 按钮可查看效果",
+                text: "2. 点击 Preview 按钮可查看效果",
             },
             {
                 tag: "p",
-                text: "如果对照的图片不一样，或者效果不明显，请点击 Preview 按钮刷新",
+                text: "3. 如果对照的图片不一样，或者效果不明显，请点击 Preview 按钮刷新",
             },
             {
                 tag: "p",
-                text: "本页面效果图由 https://picsum.photos 免费图床提供",
+                text: "4. 本页面效果图由 https://picsum.photos 免费图床提供",
             },
         ]
     },
@@ -26,12 +26,8 @@ var jsonData = [
         text: "在网页设计中，为图像和元素添加视觉效果是常见且重要的一环。CSS Filters 提供了一种简便且强大的方式来实现这些效果。今天，我们将详细介绍各种 CSS Filters 及其应用方法，让你的网页更加生动和引人注目。",
     },
     {
-        tag: "h2",
-        title: "CSS Filters",
-    },
-    {
         tag: "p",
-        text: "是一组用于处理图像和元素的图形效果，可以通过 filter 属性轻松添加。它们可以应用于图像、背景和边框等元素。常见的 CSS Filters 包括模糊、亮度、对比度、灰度等。",
+        text: "CSS Filters 是一组用于处理图像和元素的图形效果，可以通过 filter 属性轻松添加。它们可以应用于图像、背景和边框等元素。常见的 CSS Filters 包括模糊、亮度、对比度、灰度等。",
     },
     {
         tag: "h3",
@@ -298,21 +294,16 @@ var jsonData = [
         showJS: false,
         code: {
             "html": [
-                { "indent": "0", "value": '<div class="normal"></div>' },
-                { "indent": "0", "value": '<div class="drop-shadow"></div>' }
+                { "indent": "0", "value": '<img src="/assets/img/tx.png" alt="" />' },
+                { "indent": "0", "value": '<img class="drop-shadow" src="/assets/img/tx.png" alt="" />' }
             ],
             "css": [
-                { "indent": "0", "value": 'div {' },
+                { "indent": "0", "value": 'img {' },
                 { "indent": "2", "value": 'width: 100px;' },
                 { "indent": "2", "value": 'height: 100px;' },
-                { "indent": "2", "value": 'border: 10px dashed #00f;' },
-                { "indent": "2", "value": 'border-radius: 50%;' },
-                { "indent": "2", "value": 'box-sizing: border-box;' },
-                { "indent": "2", "value": 'float: left;' },
-                { "indent": "2", "value": 'margin-right: 20px;' },
                 { "indent": "0", "value": '}' },
                 { "indent": "0", "value": '.drop-shadow {' },
-                { "indent": "2", "value": 'filter: drop-shadow(5px 5px 3px #000);' },
+                { "indent": "2", "value": 'filter: drop-shadow(2px 2px 2px #00f);' },
                 { "indent": "0", "value": '}' }
             ],
             js: [{}],

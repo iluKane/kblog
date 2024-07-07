@@ -29,6 +29,7 @@ body {
   line-height: 1.2;
   font-size: 14px;
   font-family: songti;
+  color: #333;
 }
 /* 移除列表项的默认样式 */
 ol,
