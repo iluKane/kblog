@@ -25,6 +25,9 @@
 
 html,
 body {
+  min-width: 320px;
+  line-height: 1.2;
+  font-size: 14px;
   font-family: songti;
 }
 /* 移除列表项的默认样式 */
