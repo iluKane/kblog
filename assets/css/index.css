@@ -47,7 +47,6 @@ a {
 .kblog {
   width: 100%;
   max-width: 1320px;
-  min-width: 300px;
   padding: 10px;
   margin: auto;
   display: grid;
@@ -88,7 +87,7 @@ a {
 @media (max-width: 400px) {
   .kblog {
     grid-template-columns: 0 1fr 0;
-    gap: 0;
+    gap: 0px;
   }
   .kleft-container {
     position: fixed;
@@ -122,7 +121,6 @@ a {
 @media (min-width: 640px) and (max-width: 1080px) {
   .kblog {
     grid-template-columns: 300px 1fr 0;
-    padding-right: 0;
   }
   .kright-container {
     position: fixed;

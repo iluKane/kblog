@@ -1,5 +1,5 @@
 var jsonData = [
-    { tag: "h1", title: "CSS Filters \n为你的网页添加酷炫效果" },
+    { tag: "h1", title: "CSS Filters 为你的网页添加酷炫效果" },
     {
         tag: "div",
         content: [
@@ -320,7 +320,6 @@ var jsonData = [
     },
 ];
 
-
 var container = document.getElementById("kmain");
 
 jsonData.forEach(function (item) {
@@ -337,16 +336,13 @@ function createElements(data, parent) {
         element.innerText = data.text;
     }
     if (data.content) {
-        const notice = document.createElement("div");
-        notice.className = "notice";
+        element.className = "notice";
 
         data.content.forEach(item => {
-            const element = document.createElement("div");
-            element.innerText = item.text;
-            notice.appendChild(element);
+            const a = document.createElement("div");
+            a.innerText = item.text;
+            element.appendChild(a);
         });
-
-        element.appendChild(notice);
     }
 
     if (data.code) {
@@ -405,24 +401,19 @@ function createElements(data, parent) {
         element.className = "kcode";
 
         parent.appendChild(element);
-        var htmlEditor = CodeMirror(htmlBox, {
-            value: data.code.html
-                .map((line) => " ".repeat(line.indent) + line.value)
-                .join("\n"),
-            mode: "htmlmixed",
-        });
-        var cssEditor = CodeMirror(cssBox, {
-            value: data.code.css
-                .map((line) => " ".repeat(line.indent) + line.value)
-                .join("\n"),
-            mode: "css",
-        });
-        var jsEditor = CodeMirror(jsBox, {
-            value: data.code.js
-                .map((line) => " ".repeat(line.indent) + line.value)
-                .join("\n"),
-            mode: "javascript",
-        });
+
+        // 使用空格实现缩进
+        htmlBox.innerText = data.code.html
+            .map(line => " ".repeat(Number(line.indent)) + line.value)
+            .join("\n");
+        cssBox.innerText = data.code.css
+            .map(line => " ".repeat(Number(line.indent)) + line.value)
+            .join("\n");
+        jsBox.innerText = data.code.js
+            .map(line => " ".repeat(Number(line.indent)) + line.value)
+            .join("\n");
+
+        console.log(cssBox.innerText);
 
         if (data.showHTML) {
             htmlBox.style.display = "block";
@@ -441,23 +432,13 @@ function createElements(data, parent) {
         }
 
         // 初始加载时更新 iframe
-        updateIframe(
-            htmlEditor.getValue(),
-            cssEditor.getValue(),
-            jsEditor.getValue(),
-            iframeBox
-        );
+        updateIframe(htmlBox.innerText, cssBox.innerText, jsBox.innerText, iframeBox);
         openIframe.addEventListener("click", function () {
-            updateIframe(
-                htmlEditor.getValue(),
-                cssEditor.getValue(),
-                jsEditor.getValue(),
-                iframeBox
-            );
+            updateIframe(htmlBox.innerText, cssBox.innerText, jsBox.innerText, iframeBox);
         });
-    } else {
-        parent.appendChild(element);
     }
+
+    parent.appendChild(element);
 }
 
 function updateIframe(htmlContent, cssContent, jsContent, iframeBox) {

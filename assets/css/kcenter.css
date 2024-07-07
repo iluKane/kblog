@@ -118,12 +118,6 @@ header {
 .main .kcode {
   margin: 5px 0;
 }
-.main .kcode .CodeMirror {
-  height: auto;
-  color: #555;
-  font-size: 12px;
-  font-family: mono;
-}
 
 .main .openBtns {
   padding: 0 18px;
@@ -133,12 +127,12 @@ header {
   font-family: comfortaa;
 }
 .main .openBtns div {
-  height: 20px;
-  line-height: 22px;
-  padding: 0px 5px;
+  height: 22px;
+  line-height: 25px;
+  padding: 0px 6px;
   border-radius: 5px;
   box-shadow: 0 0 1px;
-  font-size: 12px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -152,6 +146,7 @@ header {
   width: 100%;
   padding: 10px 18px;
   border-radius: 10px;
+  white-space: pre-wrap;
 }
 .main .codeBoxs div {
   background-color: #eee;
@@ -164,6 +159,7 @@ iframe {
   border-radius: 10px;
   background-color: #fff;
   outline: 1px dashed #000;
+  /* display: none; */
 }
 
 footer {
