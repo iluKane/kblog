@@ -2,11 +2,15 @@
 /* 字体 */
 @font-face {
   font-family: mono;
-  src: url("../font/JetBrainsMono-Regular.ttf");
+  src: url("/assets/font/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+  font-family: cft;
+  src: url("/assets/font/Comfortaa-Light.ttf");
 }
 @font-face {
   font-family: songti;
-  src: url("../font/simsun.ttc");
+  src: url("/assets/font/simsun.ttc");
 }
 
 /* 全局 */

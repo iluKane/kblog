@@ -21,6 +21,7 @@
 .author-name {
   font-size: 1.25em;
   line-height: 30px;
+  font-family: cft;
 }
 .author-desc {
   line-height: 20px;
@@ -28,7 +29,7 @@
   position: relative;
   cursor: pointer;
   height: 20px;
-  font-family: comfortaa, songti;
+  font-family: cft, songti;
 }
 .author-desc-on {
   transition: transform 0.3s ease, opacity 0.3s ease;
