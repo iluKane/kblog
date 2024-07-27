@@ -65,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
             headerNavItem3.innerHTML = homeData.items[index1].items[index2].title;
             headerDataTime.innerHTML = "时间: " + homeData.items[index1].items[index2].data.time;
             headerDataModified.innerHTML = "修改时间: " + homeData.items[index1].items[index2].data.modified;
-
-            console.log(`index1: ${index1}, index2: ${index2}`);
         }
 
         navItem(index1, index2);
