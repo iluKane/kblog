@@ -1,0 +1,123 @@
+{
+  "Home": {
+    "title": "首页",
+    "items": [
+      {
+        "title": "文章",
+        "items": [
+          {
+            "title": "文章 1",
+            "url": "/wiki/1.html",
+            "data": {
+              "time": "2024/06/01",
+              "modified": "2024/07/01"
+            }
+          },
+          {
+            "title": "wiki 2",
+            "url": "/wiki/2.html",
+            "data": {
+              "time": "2024/06/01",
+              "modified": "2024/07/02"
+            }
+          },
+          {
+            "title": "文章 3",
+            "url": "/wiki/3.html",
+            "data": {
+              "time": "2024/06/01",
+              "modified": "2024/07/03"
+            }
+          }
+        ]
+      },
+      {
+        "title": "笔记",
+        "items": [
+          {
+            "title": "NSDV 1",
+            "url": "/notes/1.html",
+            "data": {
+              "time": "2024/06/02",
+              "modified": "2024/07/01"
+            }
+          },
+          {
+            "title": "DSFvdgdf 2",
+            "url": "/notes/2.html",
+            "data": {
+              "time": "2024/06/02",
+              "modified": "2024/07/02"
+            }
+          },
+          {
+            "title": "笔记 3",
+            "url": "/notes/3.html",
+            "data": {
+              "time": "2024/06/02",
+              "modified": "2024/07/03"
+            }
+          }
+        ]
+      },
+      {
+        "title": "空间",
+        "items": [
+          {
+            "title": "空间 1",
+            "url": "/space/1.html",
+            "data": {
+              "time": "2024/06/03",
+              "modified": "2024/07/01"
+            }
+          },
+          {
+            "title": "空间 2",
+            "url": "/space/2.html",
+            "data": {
+              "time": "2024/06/03",
+              "modified": "2024/07/02"
+            }
+          },
+          {
+            "title": "空间 3",
+            "url": "/space/3.html",
+            "data": {
+              "time": "2024/06/03",
+              "modified": "2024/07/03"
+            }
+          }
+        ]
+      },
+      {
+        "title": "其他",
+        "items": [
+          {
+            "title": "其他 1",
+            "url": "/other/1.html",
+            "data": {
+              "time": "2024/06/04",
+              "modified": "2024/07/01"
+            }
+          },
+          {
+            "title": "其他 2",
+            "url": "/other/2.html",
+            "data": {
+              "time": "2024/06/04",
+              "modified": "2024/07/02"
+            }
+          },
+          {
+            "title": "其他 3",
+            "url": "/other/3.html",
+            "data": {
+              "time": "2024/06/04",
+              "modified": "2024/07/03"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

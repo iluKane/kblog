@@ -11,51 +11,25 @@
     />
     <!-- title -->
     <title>KBlog</title>
-    <!-- Metadata -->
+    <!-- meta -->
     <meta name="author" content="Kane" />
-    <meta
-      name="description"
-      content="个人博客，分享前端知识，分享学习笔记，分享生活"
-    />
-    <meta
-      name="keywords"
-      content="html,css,js,flex,grid,chart,ilukane,kblog,filters"
-    />
-    <meta name="date" content="2024-06-11" scheme="YYYY-MM-DD" />
-    <meta name="robots" content="index, follow" />
-    <!-- Open Graph metadata (for social media sharing) -->
-    <meta
-      property="og:title"
-      content="个人博客，分享前端知识，分享学习笔记，分享生活"
-    />
-    <meta
-      property="og:description"
-      content="个人博客，分享前端知识，分享学习笔记，分享生活"
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://www.ilukane.top" />
-    <meta property="og:image" content="./assets/img/favicon.png" />
-    <meta property="og:site_name" content="KBlog" />
-    <meta property="og:locale" content="zh_CN" />
-    <!-- Article metadata -->
-    <meta property="article:published_time" content="2024-07-20T08:00:00Z" />
-    <meta property="article:modified_time" content="2024-07-20T08:00:00Z" />
-    <meta property="article:section" content="KBlog" />
-    <meta property="article:tag" content="KBlog,ilukane,kblog,blog" />
+    <meta name="description" content="description" />
+    <meta name="keywords" content="html,css,js,chart,ilukane,kblog" />
     <!-- css -->
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/kleft.css" />
     <link rel="stylesheet" href="/assets/css/kcenter.css" />
     <link rel="stylesheet" href="/assets/css/kright.css" />
+    <script>
+      function headerIndex(index1, index2) {
+        return [0, 0];
+      }
+    </script>
   </head>
   <body>
-    <!-- kblog -->
     <div class="kblog">
-      <!-- kleft -->
       <div class="kleft">
-        <!-- kleft-container -->
         <div class="kleft-container">
-          <!-- author -->
           <div class="author">
             <div class="author-avatar"></div>
             <div class="author-name">Kindergarten boss</div>
@@ -64,7 +38,6 @@
               <div class="author-desc-off">ilukane.top</div>
             </div>
           </div>
-          <!-- search -->
           <div class="search">
             <div class="search-box">
               <div class="search-icon">
@@ -79,45 +52,35 @@
             </div>
             <ul class="search-results" id="results"></ul>
             <div class="search-nav">
-              <a href="/wiki/index.html">
+              <a href="/wiki/1.html">
                 <div class="search-item" id="wiki">文章</div>
               </a>
-              <a href="/notes/index.html">
+              <a href="/notes/1.html">
                 <div class="search-item" id="notes">笔记</div>
               </a>
-              <a href="/space/index.html">
+              <a href="/space/1.html">
                 <div class="search-item" id="space">空间</div>
               </a>
-              <a href="/other/index.html">
+              <a href="/other/1.html">
                 <div class="search-item" id="other">其他</div>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- kcenter -->
       <div class="kcenter">
-        <!-- kheader -->
         <div class="kcenter-header" id="kheader"></div>
-        <!-- main -->
-        <div class="kcenter-main" id="kmain"></div>
-        <!-- footer -->
-        <footer>
-          <p>kcenter-footer</p>
-          <p>没写</p>
-        </footer>
+        <div class="kcenter-main">
+          <a href="/">返回首页</a>
+        </div>
       </div>
-      <!-- kright -->
       <div class="kright">
         <div class="kright-container">kright</div>
       </div>
-      <!-- kcontrols -->
       <div class="kcontrols">
-        <!-- openKleft -->
         <div id="openKleft">
           <img src="/assets/icon/openKleft.svg" alt="" />
         </div>
-        <!-- openKright -->
         <div id="openKright">
           <img src="/assets/icon/openKright.svg" alt="" />
         </div>
@@ -125,7 +88,6 @@
     </div>
     <script src="/assets/js/popup.js"></script>
     <script src="/assets/js/kleft.js"></script>
-    <script src="/assets/js/kmain.js"></script>
     <script src="/assets/js/link.js"></script>
   </body>
 </html>
