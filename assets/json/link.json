@@ -6,7 +6,7 @@
         "title": "文章",
         "items": [
           {
-            "title": "文章 1",
+            "title": "模拟数据",
             "url": "/wiki/1.html",
             "data": {
               "time": "2024/06/01",
@@ -14,7 +14,7 @@
             }
           },
           {
-            "title": "wiki 2",
+            "title": "模拟数据",
             "url": "/wiki/2.html",
             "data": {
               "time": "2024/06/01",
@@ -22,7 +22,7 @@
             }
           },
           {
-            "title": "文章 3",
+            "title": "模拟数据",
             "url": "/wiki/3.html",
             "data": {
               "time": "2024/06/01",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "title": "DSFvdgdf 2",
+            "title": "模拟数据",
             "url": "/notes/2.html",
             "data": {
               "time": "2024/06/02",
@@ -51,7 +51,7 @@
             }
           },
           {
-            "title": "笔记 3",
+            "title": "模拟数据",
             "url": "/notes/3.html",
             "data": {
               "time": "2024/06/02",
@@ -64,7 +64,7 @@
         "title": "空间",
         "items": [
           {
-            "title": "空间 1",
+            "title": "模拟数据",
             "url": "/space/1.html",
             "data": {
               "time": "2024/06/03",
@@ -72,7 +72,7 @@
             }
           },
           {
-            "title": "空间 2",
+            "title": "模拟数据",
             "url": "/space/2.html",
             "data": {
               "time": "2024/06/03",
@@ -80,7 +80,7 @@
             }
           },
           {
-            "title": "空间 3",
+            "title": "模拟数据",
             "url": "/space/3.html",
             "data": {
               "time": "2024/06/03",
@@ -93,7 +93,7 @@
         "title": "其他",
         "items": [
           {
-            "title": "其他 1",
+            "title": "模拟数据",
             "url": "/other/1.html",
             "data": {
               "time": "2024/06/04",
@@ -101,7 +101,7 @@
             }
           },
           {
-            "title": "其他 2",
+            "title": "模拟数据",
             "url": "/other/2.html",
             "data": {
               "time": "2024/06/04",
@@ -109,7 +109,7 @@
             }
           },
           {
-            "title": "其他 3",
+            "title": "模拟数据",
             "url": "/other/3.html",
             "data": {
               "time": "2024/06/04",

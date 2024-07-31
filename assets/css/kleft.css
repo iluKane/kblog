@@ -52,7 +52,7 @@
 }
 
 .search {
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -85,10 +85,10 @@
 }
 .search-results {
   list-style-type: none;
-  word-wrap: break-word;
+  word-break: break-all;
   display: grid;
   gap: 10px;
-  max-height: 300px;
+  max-height: 320px;
   overflow: auto;
   display: none;
 }
@@ -99,11 +99,15 @@
   border-radius: 10px;
   font-weight: bold;
   font-size: 1.1em;
+  transition: all 0.5s;
+}
+.search-results .card:hover {
+  background-color: #fff;
 }
 .search-results .kcard {
-  min-height: 70px;
+  min-height: 77.2px;
   text-align: center;
-  line-height: 70px;
+  line-height: 77.2px;
 }
 .search-results .text {
   margin-top: 10px;
@@ -122,14 +126,15 @@
   font-weight: bold;
 }
 
-.search-nav {
+.nav {
+  margin: 30px 0 0 0;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   z-index: 999;
 }
-.search-item {
+.nav-item {
   height: 40px;
   border-radius: 10px;
   background-color: #fff;

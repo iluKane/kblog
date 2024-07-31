@@ -2,7 +2,7 @@
   {
     "link": "/notes/1.html",
     "title": "CSS Filters 详解：为你的网页添加酷炫效果",
-    "content": "在网页设计中，为图像和元素添加视觉效果是常见且重要的一环。CSS Filters 提供了一种简便且强大的方式来实现这些效果。今天，我们将详细介绍各种 CSS Filters 及其应用方法，让你的网页更加生动和引人注目。"
+    "content": "blur,brightness,contrast,grayscale,hue-rotate,invert,opacity,saturate,sepia,drop-shadow"
   },
   {
     "link": "/other/1.html",

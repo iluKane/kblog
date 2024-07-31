@@ -89,83 +89,55 @@
 
 .kcenter-main {
   width: 100%;
-  margin: 30px 0;
-}
-.kcenter-main > a {
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border: 1px solid #000;
-  display: block;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .kcenter-main h1 {
   text-align: center;
 }
-.kcenter-main .notice {
-  width: 100%;
-  padding: 18px;
-  margin: 30px 0;
+.kcenter-main .kcode p {
+  margin: 5px 0;
+}
+.kcenter-main .kcode {
+  padding: 14px;
   border-radius: 10px;
-  background-color: rgba(255, 166, 0, 0.5);
-  line-height: 1.4;
-  font-family: confortaa, songti;
-  font-weight: bold;
+  box-shadow: 0 0 2px;
 }
-.kcenter-main h3 {
-  padding: 0px 18px;
-  margin-top: 20px;
-}
-.kcenter-main p {
-  padding: 0px 18px;
-  margin-bottom: 20px;
-}
-
-.kcenter-main .openBtns {
-  padding: 0 18px;
+.kcenter-main .kcode .openBtns {
   margin-bottom: 5px;
   display: flex;
   gap: 5px;
 }
-.kcenter-main .openBtns div {
+.kcenter-main .kcode .openBtns div {
   height: 22px;
   line-height: 24px;
-  padding: 0px 6px;
+  padding: 0 5px;
   border-radius: 5px;
   background-color: #eee;
   font-size: 1em;
   cursor: pointer;
 }
 
-.kcenter-main .codeBoxs {
+.kcenter-main .kcode .codeBoxs {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.kcenter-main .codeBoxs > div {
+.kcenter-main .kcode .codeBoxs > div {
   width: 100%;
   padding: 10px 18px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #eee;
   white-space: pre-wrap;
   font-family: mono;
   font-size: 12px;
 }
-.kcenter-main .openBtns div:hover,
-.kcenter-main .codeBoxs > div:hover {
-  background-color: rgba(255, 166, 0, 0.5);
-}
-
-iframe {
+.kcenter-main .kcode .codeBoxs iframe {
   width: 100%;
   border: none;
   outline: none;
-  border-radius: 10px;
-  background-color: #fff;
-  outline: 1px dashed #000;
-}
-
-footer {
-  width: 100%;
-  box-shadow: 0 0 1px;
-  padding: 14px;
+  border-radius: 5px;
+  background-color: #eee;
 }
