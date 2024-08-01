@@ -36,7 +36,7 @@
         "items": [
           {
             "title": "CSS Filters",
-            "url": "/notes/1.html",
+            "url": "/note/1.html",
             "data": {
               "time": "2024/08/01",
               "modified": "2024/08/01"
@@ -44,7 +44,7 @@
           },
           {
             "title": "模拟数据",
-            "url": "/notes/2.html",
+            "url": "/note/2.html",
             "data": {
               "time": "XXXX/XX/XX",
               "modified": "XXXX/XX/XX"
@@ -52,7 +52,7 @@
           },
           {
             "title": "模拟数据",
-            "url": "/notes/3.html",
+            "url": "/note/3.html",
             "data": {
               "time": "XXXX/XX/XX",
               "modified": "XXXX/XX/XX"

@@ -1,0 +1,721 @@
+{
+  "title": "CSS Filters 为你的网页添加酷炫效果",
+  "sections": [
+    {
+      "name": "blur()",
+      "description": "用来设置图像的模糊效果。参数为模糊半径（像素）",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='blur' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".blur {" },
+        { "indent": 2, "value": "filter: blur(5px); /* 5像素的模糊 */" },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "brightness()",
+      "description": "调整元素的亮度。值大于 1 增加亮度，小于 1 降低亮度",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='brightness' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".brightness {" },
+        {
+          "indent": 2,
+          "value": "filter: brightness(1.5); /* 增加 50% 的亮度 */"
+        },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "contrast()",
+      "description": "调整元素的对比度。值大于 1 增加对比度，小于 1 降低对比度",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='contrast' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".contrast {" },
+        {
+          "indent": 2,
+          "value": "filter: contrast(0.5); /* 减少 50% 的对比度 */"
+        },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "grayscale()",
+      "description": "将元素转换为灰度图像。值在 0 到 1 之间，1 表示完全灰度",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='grayscale' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".grayscale {" },
+        { "indent": 2, "value": "filter: grayscale(1); /* 完全灰度 */" },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "hue-rotate()",
+      "description": "调整元素的色相。值以角度为单位（deg）",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='hue-rotate' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".hue-rotate {" },
+        {
+          "indent": 2,
+          "value": "filter: hue-rotate(90deg); /* 色相旋转 90 度 */"
+        },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "invert()",
+      "description": "反转元素的颜色。值在 0 到 1 之间，1 表示完全反转",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='invert' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".invert {" },
+        { "indent": 2, "value": "filter: invert(1); /* 完全反转颜色 */" },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "opacity()",
+      "description": "调整元素的不透明度。值在 0 到 1 之间，1 表示完全不透明",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='opacity' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".opacity {" },
+        {
+          "indent": 2,
+          "value": "filter: opacity(0.5); /* 50% 的不透明度 */"
+        },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "saturate()",
+      "description": "调整元素的饱和度。值大于 1 增加饱和度，小于 1 降低饱和度",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='saturate' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".saturate {" },
+        {
+          "indent": 2,
+          "value": "filter: saturate(2); /* 增加 100% 的饱和度 */"
+        },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "sepia()",
+      "description": "将元素转换为棕褐色图像。值在 0 到 1 之间，1 表示完全棕褐色",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": 0, "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": 0,
+          "value": "<img class='sepia' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": 0, "value": "img {" },
+        { "indent": 2, "value": "width: 100px;" },
+        { "indent": 2, "value": "height: 100px;" },
+        { "indent": 0, "value": "}" },
+        { "indent": 0, "value": ".sepia {" },
+        { "indent": 2, "value": "filter: sepia(1); /* 完全棕褐色 */" },
+        { "indent": 0, "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "drop-shadow()",
+      "description": "为元素添加阴影效果。不同于 box-shadow，drop-shadow() 应用于图像本身的形状",
+      "showHTML": false,
+      "showCSS": true,
+      "showJS": false,
+      "html": [
+        { "indent": "0", "value": "<img src='/assets/img/tx.png' alt='' />" },
+        {
+          "indent": "0",
+          "value": "<img class='drop-shadow' src='/assets/img/tx.png' alt='' />"
+        }
+      ],
+      "css": [
+        { "indent": "0", "value": "img {" },
+        { "indent": "2", "value": "width: 100px;" },
+        { "indent": "2", "value": "height: 100px;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": ".drop-shadow {" },
+        { "indent": "2", "value": "filter: drop-shadow(2px 2px 2px #00f);" },
+        { "indent": "0", "value": "}" }
+      ],
+      "js": ["null"]
+    },
+    {
+      "name": "CSS_Filters_Tool",
+      "description": "css filter tool",
+      "showHTML": false,
+      "showCSS": false,
+      "showJS": false,
+      "html": [
+        {
+          "indent": "0",
+          "value": "<label class='upload' for='upload'>选择文件</label>"
+        },
+        {
+          "indent": "0",
+          "value": "<input id='upload' type='file' accept='image/*' />"
+        },
+        { "indent": "0", "value": "<div class='image'>" },
+        {
+          "indent": "2",
+          "value": "<img id='image' src='/assets/img/tx.png' alt='' />"
+        },
+        { "indent": "0", "value": "</div>" },
+        { "indent": "0", "value": "<div class='controls'>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='blur'>Blur</label>" },
+        {
+          "indent": "4",
+          "value": "<input type='range' id='blur' min='0' max='10' step='0.1' value='0' />"
+        },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='blur-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>10</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        {
+          "indent": "4",
+          "value": "<label for='brightness'>Brightness</label>"
+        },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='brightness'" },
+        { "indent": "6", "value": "min='0'" },
+        { "indent": "6", "value": "max='2'" },
+        { "indent": "6", "value": "step='0.1'" },
+        { "indent": "6", "value": "value='1'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='brightness-value'>1</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>2</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='contrast'>Contrast</label>" },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='contrast'" },
+        { "indent": "6", "value": "min='0'" },
+        { "indent": "6", "value": "max='2'" },
+        { "indent": "6", "value": "step='0.1'" },
+        { "indent": "6", "value": "value='1'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='contrast-value'>1</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>2</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='grayscale'>Grayscale</label>" },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='grayscale'" },
+        { "indent": "6", "value": "min='0'" },
+        { "indent": "6", "value": "max='1'" },
+        { "indent": "6", "value": "step='0.1'" },
+        { "indent": "6", "value": "value='0'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='grayscale-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>1</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        {
+          "indent": "4",
+          "value": "<label for='hue-rotate'>Hue Rotate</label>"
+        },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='hue-rotate'" },
+        { "indent": "6", "value": "min='0'" },
+        { "indent": "6", "value": "max='360'" },
+        { "indent": "6", "value": "step='1'" },
+        { "indent": "6", "value": "value='0'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='hue-rotate-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>360</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='invert'>Invert</label>" },
+        {
+          "indent": "4",
+          "value": "<input type='range' id='invert' min='0' max='1' step='0.1' value='0' />"
+        },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='invert-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>1</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='opacity'>Opacity</label>" },
+        {
+          "indent": "4",
+          "value": "<input type='range' id='opacity' min='0' max='1' step='0.1' value='1' />"
+        },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='opacity-value'>1</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>1</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='saturate'>Saturate</label>" },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='saturate'" },
+        { "indent": "6", "value": "min='0'" },
+        { "indent": "6", "value": "max='2'" },
+        { "indent": "6", "value": "step='0.1'" },
+        { "indent": "6", "value": "value='1'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='saturate-value'>1</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>2</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        { "indent": "4", "value": "<label for='sepia'>Sepia</label>" },
+        {
+          "indent": "4",
+          "value": "<input type='range' id='sepia' min='0' max='1' step='0.1' value='0' />"
+        },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='sepia-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>1</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        {
+          "indent": "4",
+          "value": "<label for='drop-shadow'>Drop Shadow</label>"
+        },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='drop-shadow'" },
+        { "indent": "6", "value": "min='0'" },
+        { "indent": "6", "value": "max='20'" },
+        { "indent": "6", "value": "step='1'" },
+        { "indent": "6", "value": "value='0'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>0</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='drop-shadow-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>20</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        {
+          "indent": "4",
+          "value": "<label for='drop-shadowX'>Drop Shadow X</label>"
+        },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='drop-shadowX'" },
+        { "indent": "6", "value": "min='-20'" },
+        { "indent": "6", "value": "max='20'" },
+        { "indent": "6", "value": "step='1'" },
+        { "indent": "6", "value": "value='0'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>-20</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='drop-shadowX-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>20</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "2", "value": "<div class='control'>" },
+        {
+          "indent": "4",
+          "value": "<label for='drop-shadowY'>Drop Shadow Y</label>"
+        },
+        { "indent": "4", "value": "<input" },
+        { "indent": "6", "value": "type='range'" },
+        { "indent": "6", "value": "id='drop-shadowY'" },
+        { "indent": "6", "value": "min='-20'" },
+        { "indent": "6", "value": "max='20'" },
+        { "indent": "6", "value": "step='1'" },
+        { "indent": "6", "value": "value='0'" },
+        { "indent": "4", "value": "/>" },
+        { "indent": "4", "value": "<div class='values'>" },
+        { "indent": "6", "value": "<span class='min'>-20</span>" },
+        {
+          "indent": "6",
+          "value": "<span class='current' id='drop-shadowY-value'>0</span>"
+        },
+        { "indent": "6", "value": "<span class='max'>20</span>" },
+        { "indent": "4", "value": "</div>" },
+        { "indent": "2", "value": "</div>" },
+        { "indent": "0", "value": "</div>" }
+      ],
+      "css": [
+        { "indent": "0", "value": "label {" },
+        { "indent": "2", "value": "display: block;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": "label.upload {" },
+        { "indent": "2", "value": "width: 100%;" },
+        { "indent": "2", "value": "height: 40px;" },
+        { "indent": "2", "value": "line-height: 40px;" },
+        { "indent": "2", "value": "background-color: #0cf;" },
+        { "indent": "2", "value": "border-radius: 5px;" },
+        { "indent": "2", "value": "text-align: center;" },
+        { "indent": "2", "value": "cursor: pointer;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": "input[type='file'] {" },
+        { "indent": "2", "value": "display: none;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": "input[type='range'] {" },
+        { "indent": "2", "value": "width: 100%;" },
+        { "indent": "2", "value": "margin: 3px 0;" },
+        { "indent": "2", "value": "border: none;" },
+        { "indent": "2", "value": "outline: none;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": ".image {" },
+        { "indent": "2", "value": "height: 200px;" },
+        { "indent": "2", "value": "margin: 10px 0;" },
+        { "indent": "2", "value": "background-color: #fff;" },
+        { "indent": "2", "value": "border-radius: 10px;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": ".image img {" },
+        { "indent": "2", "value": "width: 100%;" },
+        { "indent": "2", "value": "height: 100%;" },
+        { "indent": "2", "value": "object-fit: contain;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": ".controls {" },
+        { "indent": "2", "value": "display: grid;" },
+        {
+          "indent": "2",
+          "value": "grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+        },
+        { "indent": "2", "value": "gap: 10px;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": ".control {" },
+        { "indent": "2", "value": "padding: 10px;" },
+        { "indent": "2", "value": "border-radius: 10px;" },
+        { "indent": "2", "value": "background-color: #fff;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": ".values {" },
+        { "indent": "2", "value": "display: flex;" },
+        { "indent": "2", "value": "justify-content: space-between;" },
+        { "indent": "2", "value": "padding: 0 2px;" },
+        { "indent": "0", "value": "}" },
+        { "indent": "0", "value": "iframe {" },
+        { "indent": "2", "value": "height: 600px" },
+        { "indent": "2", "value": "border: 1px solid #00f;" },
+        { "indent": "0", "value": "}" }
+      ],
+      "js": [
+        {
+          "indent": "0",
+          "value": "document.addEventListener('DOMContentLoaded', () => {"
+        },
+        {
+          "indent": "2",
+          "value": "const img = document.getElementById('image');"
+        },
+        {
+          "indent": "2",
+          "value": "const controls = document.querySelectorAll('.controls input[type=range]');"
+        },
+        {
+          "indent": "2",
+          "value": "const fileInput = document.getElementById('upload');"
+        },
+        { "indent": "2", "value": "controls.forEach((control) => {" },
+        {
+          "indent": "4",
+          "value": "control.addEventListener('input', updateFilters);"
+        },
+        { "indent": "2", "value": "});" },
+        {
+          "indent": "2",
+          "value": "fileInput.addEventListener('change', (event) => {"
+        },
+        { "indent": "4", "value": "const file = event.target.files[0];" },
+        { "indent": "4", "value": "if (file) {" },
+        { "indent": "6", "value": "const reader = new FileReader();" },
+        { "indent": "6", "value": "reader.onload = (e) => {" },
+        { "indent": "8", "value": "img.src = e.target.result;" },
+        { "indent": "6", "value": "};" },
+        { "indent": "6", "value": "reader.readAsDataURL(file);" },
+        { "indent": "4", "value": "}" },
+        { "indent": "2", "value": "});" },
+        { "indent": "2", "value": "function updateFilters() {" },
+        {
+          "indent": "4",
+          "value": "const blur = document.getElementById('blur').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const brightness = document.getElementById('brightness').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const contrast = document.getElementById('contrast').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const grayscale = document.getElementById('grayscale').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const hueRotate = document.getElementById('hue-rotate').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const invert = document.getElementById('invert').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const opacity = document.getElementById('opacity').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const saturate = document.getElementById('saturate').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const sepia = document.getElementById('sepia').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const dropShadow = document.getElementById('drop-shadow').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const dropShadowX = document.getElementById('drop-shadowX').value;"
+        },
+        {
+          "indent": "4",
+          "value": "const dropShadowY = document.getElementById('drop-shadowY').value;"
+        },
+        { "indent": "4", "value": "img.style.filter = `" },
+        { "indent": "6", "value": "blur(${blur}px)" },
+        { "indent": "6", "value": "brightness(${brightness})" },
+        { "indent": "6", "value": "contrast(${contrast})" },
+        { "indent": "6", "value": "grayscale(${grayscale})" },
+        { "indent": "6", "value": "hue-rotate(${hueRotate}deg)" },
+        { "indent": "6", "value": "invert(${invert})" },
+        { "indent": "6", "value": "opacity(${opacity})" },
+        { "indent": "6", "value": "saturate(${saturate})" },
+        { "indent": "6", "value": "sepia(${sepia})" },
+        {
+          "indent": "6",
+          "value": "drop-shadow(${dropShadowX}px ${dropShadowY}px ${dropShadow}px #000)"
+        },
+        { "indent": "4", "value": "`;" },
+        {
+          "indent": "4",
+          "value": "document.getElementById('blur-value').textContent = blur;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('brightness-value').textContent = brightness;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('contrast-value').textContent = contrast;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('grayscale-value').textContent = grayscale;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('hue-rotate-value').textContent = hueRotate;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('invert-value').textContent = invert;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('opacity-value').textContent = opacity;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('saturate-value').textContent = saturate;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('sepia-value').textContent = sepia;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('drop-shadow-value').textContent = dropShadow;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('drop-shadowX-value').textContent = dropShadowX;"
+        },
+        {
+          "indent": "4",
+          "value": "document.getElementById('drop-shadowY-value').textContent = dropShadowY;"
+        },
+        { "indent": "2", "value": "}" },
+        { "indent": "2", "value": "updateFilters();" },
+        { "indent": "0", "value": "});" },
+        { "indent": "0", "value": "" }
+      ]
+    }
+  ]
+}

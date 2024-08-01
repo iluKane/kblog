@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/notes/1.json")
+  fetch("/note/1.json")
     .then((response) => response.json())
     .then((jsonData) => {
       var kmain = document.getElementById("kmain");
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nav.appendChild(ul);
-    kright.appendChild(nav);
+    kright.insertBefore(nav, kright.firstChild);
   }
 
   function createSection(data, parent) {
@@ -143,8 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 background: #eee; /* 滚动条轨道颜色 */
               }
               ::-webkit-scrollbar-thumb {
-                background: #f9f; /* 滚动条滑块颜色 */
-                border-radius: 0 5px 0 5px; /* 滚动条滑块圆角 */
+                background: #aaa; /* 滚动条滑块颜色 */
+                border-radius: 5px; /* 滚动条滑块圆角 */
               }
               /* 应用传入的自定义样式 */
               ${cssContent}

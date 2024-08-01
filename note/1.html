@@ -10,19 +10,24 @@
       type="image/x-icon"
     />
     <!-- title -->
-    <title>KBlog</title>
+    <title>CSS Filters</title>
     <!-- meta -->
     <meta name="author" content="Kane" />
-    <meta name="description" content="description" />
+    <meta name="description" content="CSS Filters 为你的网页添加酷炫效果" />
     <meta name="keywords" content="html,css,js,chart,ilukane,kblog" />
     <!-- css -->
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/kleft.css" />
     <link rel="stylesheet" href="/assets/css/kcenter.css" />
     <link rel="stylesheet" href="/assets/css/kright.css" />
+    <style>
+      #CSS_Filters_Tool ~ .codeBoxs > iframe {
+        height: 680px;
+      }
+    </style>
     <script>
       function headerIndex(index1, index2) {
-        return [2, 0];
+        return [1, 0];
       }
     </script>
   </head>
@@ -42,8 +47,8 @@
             <a href="/wiki/1.html">
               <div class="nav-item" id="wiki">文章</div>
             </a>
-            <a href="/note/1.html">
-              <div class="nav-item" id="note">笔记</div>
+            <a href="/notes/1.html">
+              <div class="nav-item" id="notes">笔记</div>
             </a>
             <a href="/space/1.html">
               <div class="nav-item" id="space">空间</div>
@@ -70,12 +75,10 @@
       </div>
       <div class="kcenter">
         <div class="kcenter-header" id="kheader"></div>
-        <div class="kcenter-main">
-          <a href="/">返回首页</a>
-        </div>
+        <div class="kcenter-main" id="kmain"></div>
       </div>
       <div class="kright">
-        <div class="kright-container">kright</div>
+        <div class="kright-container" id="kright"></div>
       </div>
       <div class="kcontrols">
         <div id="openKleft">
@@ -88,6 +91,8 @@
     </div>
     <script src="/assets/js/popup.js"></script>
     <script src="/assets/js/kleft.js"></script>
+    <script src="/assets/js/kmain.js"></script>
     <script src="/assets/js/link.js"></script>
+    <script src="/note/1.js"></script>
   </body>
 </html>
