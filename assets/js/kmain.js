@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         const target = document.getElementById(id);
         window.scrollTo({
-          top: target.offsetTop - 24,
+          top: target.offsetTop - 25,
           behavior: "smooth",
         });
       });

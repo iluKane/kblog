@@ -103,7 +103,7 @@
 .kcenter-main .kcode {
   padding: 14px;
   border-radius: 10px;
-  box-shadow: 0 0 2px;
+  border: 1px solid #ccc;
 }
 .kcenter-main .kcode .openBtns {
   margin-bottom: 5px;
