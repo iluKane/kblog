@@ -35,6 +35,7 @@ body {
 ol,
 ul {
   list-style: none;
+  position: sticky;
 }
 
 /* 设置表格的默认边框样式 */
