@@ -39,7 +39,7 @@
             "url": "/note/1.html",
             "data": {
               "time": "2024/08/01",
-              "modified": "2024/08/01"
+              "modified": "2024/08/04"
             }
           },
           {
@@ -93,11 +93,11 @@
         "title": "其他",
         "items": [
           {
-            "title": "模拟数据",
+            "title": "CSS Filters Tool",
             "url": "/other/1.html",
             "data": {
-              "time": "XXXX/XX/XX",
-              "modified": "XXXX/XX/XX"
+              "time": "2024/08/04",
+              "modified": "2024/08/04"
             }
           },
           {

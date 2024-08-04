@@ -20,15 +20,13 @@
     <link rel="stylesheet" href="/assets/css/kleft.css" />
     <link rel="stylesheet" href="/assets/css/kcenter.css" />
     <link rel="stylesheet" href="/assets/css/kright.css" />
-    <style>
-      #CSS_Filters_Tool ~ .codeBoxs > iframe {
-        height: 680px;
-      }
-    </style>
     <script>
       function headerIndex(index1, index2) {
         return [1, 0];
       }
+      document.addEventListener("DOMContentLoaded", function () {
+        loadContentFromJSON("/note/1.json");
+      });
     </script>
   </head>
   <body>
@@ -78,7 +76,14 @@
         <div class="kcenter-main" id="kmain"></div>
       </div>
       <div class="kright">
-        <div class="kright-container" id="kright"></div>
+        <div class="kright-container" id="kright">
+          <div class="krcard" onclick="window.location.href='/other/1.html'">
+            <div class="title">CSS Filters Tool</div>
+            <div class="text">
+              在线 css filters 工具，选择图片，查看效果，了解 css filters 的属性
+            </div>
+          </div>
+        </div>
       </div>
       <div class="kcontrols">
         <div id="openKleft">
@@ -93,6 +98,5 @@
     <script src="/assets/js/kleft.js"></script>
     <script src="/assets/js/kmain.js"></script>
     <script src="/assets/js/link.js"></script>
-    <script src="/note/1.js"></script>
   </body>
 </html>
